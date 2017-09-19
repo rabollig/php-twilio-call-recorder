@@ -22,7 +22,6 @@ $response = <<<HEREDOC
       record="record-from-answer"
       recordingStatusCallback="end_call.php"
       method="post"
-      trim="trim-silence"
       callerId="{$callerId}"
     >
       {$_POST['Digits']}
