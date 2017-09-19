@@ -1,8 +1,8 @@
 <?php
 
-$authorizedCallerID = ['NPA0001234'];
+$authorizedCallerId = ['NPA0001234'];
 $email              = 'user@example.com';
 $emailName          = 'Randall';
 $password           = '996655';
 $greeting           = 'My hovercraft is full of eels.';
-$callerID           = ''; // leave blank to forward the caller's callerID
+$callerId           = ''; // leave blank to forward the caller's callerID

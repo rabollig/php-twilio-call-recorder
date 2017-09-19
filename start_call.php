@@ -11,8 +11,8 @@ $_SESSION['caller']      = $_POST['Caller'];
 $_SESSION['destination'] = $_POST['Digits'];
 
 // If callerID not specified in config.  Use caller's callerID
-if (strlen($callerID) < 10) {
-    $callerID = $_POST['Caller'];
+if (strlen($callerId) < 10) {
+    $callerId = $_POST['Caller'];
 }
 
 $response = <<<HEREDOC
@@ -23,7 +23,7 @@ $response = <<<HEREDOC
       recordingStatusCallback="end_call.php"
       method="post"
       trim="trim-silence"
-      callerID="{$caller}"
+      callerId="{$callerId}"
     >
       {$_POST['Digits']}
     </Dial>

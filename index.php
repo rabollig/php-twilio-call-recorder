@@ -5,7 +5,7 @@ session_regenerate_id(); // Create a new session for this call
 
 
 // If caller not on authorized list... abort
-if (!in_array($_POST['Caller'], $authorizedCallerID)) {
+if (!in_array($_POST['Caller'], $authorizedCallerId)) {
     say('Sorry.  You are not on the guest list.');
     exit();
 }
