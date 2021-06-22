@@ -1,5 +1,5 @@
 {
-    "name": "php-twilio-call-recorder",
+    "name": "rabollig/php-twilio-call-recorder",
     "license": "MIT",
     "description": "A simple API script to record phone calls with Twilio.com",
     "require": {
